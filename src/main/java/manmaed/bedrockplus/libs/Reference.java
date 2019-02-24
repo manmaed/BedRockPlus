@@ -7,7 +7,7 @@ public class Reference {
     public static final String MOD_NAME = "bedrockplus";
     public static final String MOD_LOG = "[BedRock+]";
     public static final String MODNAME = "BedRock+";
-    public static final String VERSION = "0.7.3";
+    public static final String VERSION = "0.7.4";
     public static final String CLIENT_PROXY = "manmaed.bedrockplus.proxy.ClientProxy";
     public static final String PROXY_COMMON = "manmaed.bedrockplus.proxy.CommonProxy";
     public static final Random RANDOM = new Random();

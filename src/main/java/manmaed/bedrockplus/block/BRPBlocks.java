@@ -16,10 +16,11 @@ public class BRPBlocks {
 	public static void load() {
 		//Init'ing
         brpglass = new BRPBlockBase(Material.GLASS, SoundType.GLASS, false, "bedrockglass");
-        brpstonebricks = new BRPBlockBase(Material.GLASS, SoundType.GLASS, false, "bedrockstonebrick");
-        brpglowstone = new BRPBlockBase(Material.GLASS, SoundType.GLASS, false, "bedrockglowstone");
+        brpstonebricks = new BRPBlockBase(Material.ROCK, SoundType.STONE, false, "bedrockstonebrick");
+        brpglowstone = new BRPBlockBase(Material.GLASS, SoundType.GLASS, true, "bedrockglowstone");
         brpcglass = new BRPBlockBase(Material.GLASS, SoundType.GLASS, false, "bedrockclearglass");
-        brpladder = new BRPLadder();
+        brpcglass.settooltop("This only works when the Connected Textures Mod is installed");
+        brpladder = new BRPLadder("bedrockladder");
 
 
         BedRockPlus.getRegistryHelper().registerBlock(brpglass);
@@ -32,7 +33,7 @@ public class BRPBlocks {
         /*brpglass.setRegistryName("bedrockglass");
         brpstonebricks.setRegistryName("bedrockstonebrick");
         brpglowstone.setRegistryName("bedrockglowstone");
-        brpcglass.setRegistryName("bedrockclearglass");*/
-        brpladder.setRegistryName("bedrockladder");
+        brpcglass.setRegistryName("bedrockclearglass");
+        brpladder.setRegistryName("bedrockladder");*/
 	}
 }

@@ -19,24 +19,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class BRPLadder extends BlockLadder {
 
-    public BRPLadder() {
+    public BRPLadder(String name) {
         super();
         setSoundType(SoundType.STONE);
         setCreativeTab(BedRockPlus.tabsBRP);
         disableStats();
         setHardness(6000000.0F);
         setBlockUnbreakable();
-        setUnlocalizedName("bedrockladder");
+        setUnlocalizedName(name);
+        setRegistryName(name);
     }
 
     public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
-
-
         return !(entity instanceof EntityWither);
-        //return false;
-        //return this;
-        /*this != this;*/
-    }
+        }
     @Override
     public void onBlockExploded(World world, BlockPos pos, Explosion explosion) {
     }
@@ -47,13 +43,7 @@ public class BRPLadder extends BlockLadder {
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
-    public boolean isFullCube()
-    {
-        return false;
-    }
-
 }
