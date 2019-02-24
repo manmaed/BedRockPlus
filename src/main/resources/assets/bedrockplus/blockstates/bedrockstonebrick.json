@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "normal": { "model": "bedrockplus:bedrockstonebrick" },
+    "inventory": { "model": "bedrockplus:bedrockstonebrick" }
+  }
+}

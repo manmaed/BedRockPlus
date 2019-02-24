@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "normal": { "model": "bedrockplus:bedrockclearglass" },
+    "inventory": { "model": "bedrockplus:bedrockclearglass" }
+  }
+}

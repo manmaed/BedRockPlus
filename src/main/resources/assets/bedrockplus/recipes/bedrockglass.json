@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "bedrockplus:config_property",
+      "category": "Recipes",
+      "key": "EnableRecipes"
+    }
+  ],
+  "pattern": [
+    "sbs",
+    "sbs",
+    "sbs"
+  ],
+  "key": {
+    "s": { "item": "minecraft:stick" },
+    "b": { "item": "minecraft:bedrock" }
+  },
+  "result": {
+    "item": "bedrockplus:bedrockladder",
+    "count": 3
+  }
+}
