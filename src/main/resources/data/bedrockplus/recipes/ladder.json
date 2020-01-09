@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sbs",
+    "sbs",
+    "sbs"
+  ],
+  "key": {
+    "s": { "item": "minecraft:stick" },
+    "b": { "item": "minecraft:bedrock" }
+  },
+  "result": {
+    "item": "bedrockplus:ladder",
+    "count": 3
+  }
+}

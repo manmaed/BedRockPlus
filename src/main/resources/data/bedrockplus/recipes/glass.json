@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "gbg",
+    "ggg"
+  ],
+  "key": {
+    "g": { "item": "minecraft:glass" },
+    "b": { "item": "minecraft:bedrock" }
+  },
+  "result": {
+    "item": "bedrockplus:glass",
+    "count": 8
+  }
+}

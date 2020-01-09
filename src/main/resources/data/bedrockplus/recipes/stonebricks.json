@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "gbg",
+    "ggg"
+  ],
+  "key": {
+    "g": { "item": "minecraft:stone_bricks"},
+    "b": { "item": "minecraft:bedrock" }
+  },
+  "result": {
+    "item": "bedrockplus:stonebrick",
+    "count": 8
+  }
+}
