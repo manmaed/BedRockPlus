@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.WitherEntity;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockReader;
@@ -15,15 +14,15 @@ import net.minecraft.world.World;
  */
 public class BRPBlockBase extends Block {
     private boolean isglass = false;
-    public BRPBlockBase(Block.Properties properties, String name, Boolean isglass) {
+    public BRPBlockBase(Block.Properties properties) {
         super(properties);
         /*setSoundType(soundType);
         setCreativeTab(BedRockPlus.tabsBRP);
         disableStats();
         setHardness(6000000.0F);
         setBlockUnbreakable();*/
-        setRegistryName(name);
-        this.isglass = isglass;
+        /*setRegistryName(name);
+        this.isglass = isglass;*/
     }
 
 
@@ -42,12 +41,12 @@ public class BRPBlockBase extends Block {
         return false;
     }
 
-    @Override
+   /* @Override
     public BlockRenderLayer getRenderLayer() {
         if (isglass) {
             return BlockRenderLayer.CUTOUT;
         } else {
             return BlockRenderLayer.SOLID;
         }
-    }
+    }*/
 }

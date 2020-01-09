@@ -33,10 +33,10 @@ public class BRPBlocks {
 
     public static void load() {
 
-        stonebricks = new BRPBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops(), "stonebrick", false);
-        glowstone = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).noDrops(),"glowstone", false);
-        glass  = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).noDrops().lightValue(15),"glass", true);
-        ladder = new BRPLadder(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops(), "ladder");
+        stonebricks = new BRPBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops()).setRegistryName("stonebrick");
+        glowstone = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).noDrops()).setRegistryName("glowstone");
+        glass  = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).lightValue(15).noDrops()).setRegistryName("glass");
+        ladder = new BRPLadder(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops()).setRegistryName("ladder");
 
 
         BedRockPlus.getRegisteryHandler().registerBlock(stonebricks);
