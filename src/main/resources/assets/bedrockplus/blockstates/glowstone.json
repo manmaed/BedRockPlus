@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "bedrockplus:glowstone" }
+    "": { "model": "bedrockplus:block/glowstone" }
   }
 }

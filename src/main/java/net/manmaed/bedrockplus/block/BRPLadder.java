@@ -4,6 +4,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.LadderBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.WitherEntity;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockReader;
@@ -33,8 +34,8 @@ public class BRPLadder extends LadderBlock {
 
     }
 
-    /*@Override
+    @Override
     public BlockRenderLayer getRenderLayer() {
         return BlockRenderLayer.CUTOUT;
-    }*/
+    }
 }

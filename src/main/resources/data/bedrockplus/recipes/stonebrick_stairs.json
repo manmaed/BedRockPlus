@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "b  ",
+    "bb ",
+    "bbb"
+  ],
+  "key": {
+
+    "b": { "item": "bedrockplus:stonebrick" }
+  },
+  "result": {
+    "item": "bedrockplus:stonebrick_stairs",
+    "count": 4
+  }
+}

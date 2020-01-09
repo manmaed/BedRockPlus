@@ -3,6 +3,7 @@ package net.manmaed.bedrockplus.block;
 import net.manmaed.bedrockplus.BedRockPlus;
 import net.manmaed.bedrockplus.libs.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ObjectHolder;
@@ -28,21 +29,30 @@ public class BRPBlocks {
 
     @ObjectHolder(Reference.REGISTER + "ladder")
     public static Block ladder;
-    public static Block sbstairs;
+
+    @ObjectHolder(Reference.REGISTER + "bedrock_stairs")
     public static Block brstairs;
+
+    @ObjectHolder(Reference.REGISTER + "stonebrick_stairs")
+    public static Block sbstairs;
+
 
     public static void load() {
 
-        stonebricks = new BRPBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops()).setRegistryName("stonebrick");
-        glowstone = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).noDrops()).setRegistryName("glowstone");
-        glass  = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).lightValue(15).noDrops()).setRegistryName("glass");
+        stonebricks = new BRPBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops(), false).setRegistryName("stonebrick");
+        glowstone = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).lightValue(15).noDrops(), false).setRegistryName("glowstone");
+        glass  = new BRPBlockBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(hard, ress).sound(SoundType.GLASS).noDrops(),true).setRegistryName("glass");
         ladder = new BRPLadder(Block.Properties.create(Material.ROCK).hardnessAndResistance(hard, ress).sound(SoundType.STONE).noDrops()).setRegistryName("ladder");
+        brstairs = new BRPStairs(Blocks.BEDROCK.getDefaultState(), Block.Properties.from(Blocks.BEDROCK)).setRegistryName("bedrock_stairs");
+        sbstairs = new BRPStairs(stonebricks.getDefaultState(), Block.Properties.from(stonebricks)).setRegistryName("stonebrick_stairs");
 
 
         BedRockPlus.getRegisteryHandler().registerBlock(stonebricks);
         BedRockPlus.getRegisteryHandler().registerBlock(glowstone);
         BedRockPlus.getRegisteryHandler().registerBlock(glass);
         BedRockPlus.getRegisteryHandler().registerBlock(ladder);
+        BedRockPlus.getRegisteryHandler().registerBlock(brstairs);
+        BedRockPlus.getRegisteryHandler().registerBlock(sbstairs);
 
         //Init'ing
         /*brpglass = new BRPBlockBase(Material.GLASS, SoundType.GLASS, false, "bedrockglass");
