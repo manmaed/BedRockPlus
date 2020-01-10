@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "bedrockplus:blocks/bedrockstonebrick",
+    "top": "bedrockplus:blocks/bedrockstonebrick",
+    "side": "bedrockplus:blocks/bedrockstonebrick"
+  }
+}
