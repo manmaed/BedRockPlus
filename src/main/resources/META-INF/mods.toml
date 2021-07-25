@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+[[mods]]
+modId="bedrockplus"
+version="${file.jarVersion}"
+displayName="BedRock+"
+description='''
+Adds More Bedrock Stuff!
+'''

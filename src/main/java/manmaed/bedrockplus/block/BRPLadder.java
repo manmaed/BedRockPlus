@@ -1,36 +1,43 @@
 package manmaed.bedrockplus.block;
 
-import manmaed.bedrockplus.BedRockPlus;
-import net.minecraft.block.BlockLadder;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.Explosion;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.block.LadderBlock;
+import net.minecraft.world.level.block.state.BlockState;
+
 
 /**
  * Created by manmaed on 16/02/2019.
  */
-public class BRPLadder extends BlockLadder {
+public class BRPLadder extends LadderBlock {
 
-    public BRPLadder(String name) {
-        super();
-        setSoundType(SoundType.STONE);
+    public BRPLadder(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    public boolean canEntityDestroy(BlockState state, BlockGetter world, BlockPos pos, Entity entity) {
+        return !(entity instanceof WitherBoss);
+    }
+
+    @Override
+    public boolean canDropFromExplosion(BlockState state, BlockGetter world, BlockPos pos, Explosion explosion) {
+        return false;
+    }
+    /*
+    setSoundType(SoundType.STONE);
         setCreativeTab(BedRockPlus.tabsBRP);
         disableStats();
         setHardness(6000000.0F);
         setBlockUnbreakable();
         setUnlocalizedName(name);
         setRegistryName(name);
-    }
+     */
 
-    public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
+    /*public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
         return !(entity instanceof EntityWither);
         }
     @Override
@@ -45,5 +52,5 @@ public class BRPLadder extends BlockLadder {
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
-    }
+    }*/
 }

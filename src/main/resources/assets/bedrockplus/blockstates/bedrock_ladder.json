@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "bedrockplus:block/bedrock_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bedrockplus:block/bedrock_ladder"
+    },
+    "facing=south": {
+      "model": "bedrockplus:block/bedrock_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockplus:block/bedrock_ladder",
+      "y": 270
+    }
+  }
+}

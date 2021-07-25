@@ -1,36 +1,29 @@
 package manmaed.bedrockplus.block;
 
-import manmaed.bedrockplus.BedRockPlus;
-import net.minecraft.block.BlockStairs;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.Explosion;
-import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
 /**
  * Created by manmaed on 10/01/2020.
  */
-public class BRPStairs extends BlockStairs {
-    protected BRPStairs(IBlockState modelState, String name) {
-        super(modelState);
-        setSoundType(SoundType.STONE);
-        setCreativeTab(BedRockPlus.tabsBRP);
-        disableStats();
-        setHardness(6000000.0F);
-        setBlockUnbreakable();
-        setUnlocalizedName(name);
-        setRegistryName(name);
+public class BRPStairs extends StairBlock {
+    protected BRPStairs(BlockState blockState, Properties properties) {
+        super(blockState, properties);
     }
 
     @Override
-    public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
-        return !(entity instanceof EntityWither);
+    public boolean canEntityDestroy(BlockState state, BlockGetter world, BlockPos pos, Entity entity) {
+        return !(entity instanceof WitherBoss);
     }
+
     @Override
-    public void onBlockExploded(World world, BlockPos pos, Explosion explosion) {
+    public boolean canDropFromExplosion(BlockState state, BlockGetter world, BlockPos pos, Explosion explosion) {
+        return false;
     }
 }

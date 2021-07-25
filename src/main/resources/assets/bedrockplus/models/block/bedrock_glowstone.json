@@ -3,11 +3,9 @@
   "loader": "forge:multi-layer",
   "layers": {
     "solid": {
-      "parent": "block/outer_stairs",
+      "parent": "block/cube_all",
       "textures": {
-        "bottom": "block/bedrock",
-        "top": "block/bedrock",
-        "side": "block/bedrock"
+        "all": "block/bedrock"
       },
       "tasmsform": {
         "origin": "center",
@@ -17,9 +15,7 @@
     "translucent": {
       "parent": "block/cube_all",
       "textures": {
-        "bottom": "bedrockplus:block/stonebricks",
-        "top": "bedrockplus:block/stonebricks",
-        "side": "bedrockplus:block/stonebricks"
+        "all": "bedrockplus:block/glowstone"
       }
     }
   },

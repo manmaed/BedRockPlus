@@ -1,27 +1,49 @@
 package manmaed.bedrockplus;
 
-import manmaed.bedrockplus.block.BRPBlocks;
-import manmaed.bedrockplus.creativetab.BRPCreativeTab;
+import manmaed.bedrockplus.config.BRPConfig;
 import manmaed.bedrockplus.libs.Reference;
-import manmaed.bedrockplus.libs.iChun;
-import manmaed.bedrockplus.libs.util.LogHelper;
-import manmaed.bedrockplus.libs.util.RegistryHelper;
-import manmaed.bedrockplus.proxy.CommonProxy;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.common.config.Configuration;
+import manmaed.bedrockplus.libs.RegisterHandler;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, certificateFingerprint = "@FINGERPRINT@")
-
+@Mod(Reference.MOD_ID)
 public class BedRockPlus {
 
-	@Mod.Instance(Reference.MOD_ID)
+	public static RegisterHandler registerHandler;
+	public static final CreativeModeTab itemGroup = new CreativeModeTab(Reference.MOD_ID) {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(Blocks.BEDROCK.asItem());
+		}
+	};
+
+	public BedRockPlus() {
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::init);
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(BedRockPlusClient::doClientStuff);
+		registerHandler = new RegisterHandler();
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BRPConfig.COMMON_CONFIG);
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+	public void init(final FMLCommonSetupEvent event) {
+
+	}
+
+	public static RegisterHandler getRegisteryHandler() {
+		return registerHandler;
+	}
+
+}
+//OLD CODE
+//TODO: Remove
+/*@Mod.Instance(Reference.MOD_ID)
 	public static BedRockPlus instance;
     public static final Logger logger = LogManager.getLogger(Reference.MOD_ID);
     private static RegistryHelper registryHelper;
@@ -67,7 +89,7 @@ public class BedRockPlus {
 	{
 	//Add thins
 	}
-	
+
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
@@ -82,6 +104,4 @@ public class BedRockPlus {
 
 	public static RegistryHelper getRegistryHelper() {
 		return registryHelper;
-	}
-}
-
+	}*/
