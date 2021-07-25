@@ -41,11 +41,11 @@ public class BRPBlocks {
     public static void load() {
 		//Init'ing
         //("bedrock", new Block(BlockBehaviour.Properties.of(Material.STONE).strength(-1.0F, 3600000.0F).noDrops().isValidSpawn(Blocks::never)));
-        BR_GLASS = new HalfTransparentBlock(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(-1.0F, 3600000.0F).noOcclusion().noDrops().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never));
+        BR_GLASS = new Block(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(-1.0F, 3600000.0F).noOcclusion().noDrops().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never));
         BR_GLOWSTONE = new Block(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(-1.0F, 3600000.0F).lightLevel((light)->{
             return 15;
         }).noDrops().isValidSpawn(BRPBlocks::never));
-        BR_CLEARGLASS = new HalfTransparentBlock(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(-1.0F, 3600000.0F).noOcclusion().noDrops().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never));
+        BR_CLEARGLASS = new Block(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(-1.0F, 3600000.0F).noOcclusion().noDrops().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never));
         BR_STONEBRICKS = new Block(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1.0F, 3600000.0F).noDrops().isValidSpawn(BRPBlocks::never));
         BR_LADDER = new LadderBlock(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.LADDER).strength(-1.0F, 3600000.0F).noDrops().isValidSpawn(BRPBlocks::never).noOcclusion());
         BR_STAIRS = new StairBlock(Blocks.BEDROCK.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.BEDROCK));

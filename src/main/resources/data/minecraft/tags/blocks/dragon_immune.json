@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockplus:bedrock_glass",
+    "bedrockplus:bedrock_glowstone",
+    "bedrockplus:bedrock_clear_glass",
+    "bedrockplus:bedrock_stonebricks",
+    "bedrockplus:bedrock_ladder",
+    "bedrockplus:bedrock_stairs",
+    "bedrockplus:bedrock_stonebrick_stairs"
+  ]
+}
