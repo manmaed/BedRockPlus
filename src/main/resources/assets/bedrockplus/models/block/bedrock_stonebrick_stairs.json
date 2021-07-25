@@ -15,7 +15,7 @@
       }
     },
     "translucent": {
-      "parent": "block/cube_all",
+      "parent": "block/stairs",
       "textures": {
         "bottom": "bedrockplus:block/stonebricks",
         "top": "bedrockplus:block/stonebricks",

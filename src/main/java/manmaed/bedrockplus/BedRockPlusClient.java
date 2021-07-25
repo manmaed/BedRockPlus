@@ -1,5 +1,6 @@
 package manmaed.bedrockplus;
 
+import manmaed.bedrockplus.block.BRPBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -17,5 +18,8 @@ public class BedRockPlusClient
                 ItemBlockRenderTypes.setRenderLayer(block,
                         renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
             }
+        ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_LADDER, RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_CLEARGLASS, RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_GLASS, RenderType.translucent());
         }
 }
