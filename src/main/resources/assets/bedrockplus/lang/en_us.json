@@ -1,3 +1,13 @@
 {
-  "": ""
+  "lang.file.name": "English US",
+  "lang.author.name": "manmaed",
+
+  "itemGroup.bedrockplus": "BedRock+",
+  "block.bedrockplus.bedrock_glass": "BedRock Glass",
+  "block.bedrockplus.bedrock_glowstone": "BedRock Glowstone",
+  "block.bedrockplus.bedrock_clear_glass": "BedRock Clear Glass",
+  "block.bedrockplus.bedrock_stonebricks": "BedRock Stone Bricks",
+  "block.bedrockplus.bedrock_ladder": "BedRock Ladder",
+  "block.bedrockplus.bedrock_stairs": "BedRock Stairs",
+  "block.bedrockplus.bedrock_stonebrick_stairs": "BedRock Stone Brick Stairs"
 }
