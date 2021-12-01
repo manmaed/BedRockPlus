@@ -1,0 +1,20 @@
+{
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/bedrock",
+    "1.16.5": {
+      "0.7.5": "Last 1.16.5 Update"
+    },
+    "1.17.1": {
+      "0.8.2": "Port to 1.17.1"
+    },
+    "1.18": {
+      "0.9.1": "Port to 1.18"
+    },
+    "promos": {
+      "1.16.5-latest": "0.7.8",
+      "1.16.5-recommended": "0.7.8",
+      "1.17.1-latest": "0.8.2",
+      "1.17.1-recommended": "0.8.2",
+      "1.18-latest": "0.9.1",
+      "1.18-recommended": "0.9.1"
+    }
+}
