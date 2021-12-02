@@ -112,7 +112,12 @@ if (ENV.CURSE_DEPLOY) {
             addGameVersion "Forge"
             addGameVersion "${minecraft_version}"
             mainArtifact(jar)
+            displayName = "BedrockPlus Version ${version}"
             changelog = "changeme"
+
+        }
+        options {
+            javaVersionAutoDetect = true // defaults to true
         }
     }
 }
