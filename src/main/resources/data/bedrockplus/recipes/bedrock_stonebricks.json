@@ -10,7 +10,7 @@
     "b": { "item": "minecraft:bedrock" }
   },
   "result": {
-    "item": "bedrockplus:bedrock_stonebrick",
+    "item": "bedrockplus:bedrock_stonebricks",
     "count": 8
   }
 }

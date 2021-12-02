@@ -1,12 +1,12 @@
 modLoader="javafml"
 loaderVersion="[38,)"
 license="All rights reserved"
-issueTrackerURL = "https://github.com/net.manmaed/BedRockPlus/issues" #optional
+issueTrackerURL = "https://github.com/manmaed/BedRockPlus/issues" #optional
 [[mods]]
 modId="bedrockplus"
 version="${file.jarVersion}"
 displayName="BedRock+"
-updateJSONURL = "https://raw.githubusercontent.com/net.manmaed/BedRockPlus/main/update.json"
+updateJSONURL = "https://raw.githubusercontent.com/manmaed/BedRockPlus/main/update.json"
 authors = "manmaed" #optional
 logoFile = "bedrockplus_logo.png"
 description='''
