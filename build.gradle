@@ -74,6 +74,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+//    implementation fg.deobf("curse.maven:${bg_slug}-${bg_pid}:${bg_fid}")
 //    compile fg.deobf("curse.maven:TOP-245211:3157997") //The One Probe
 //    compile fg.deobf("curse.maven:JEI-238222:3414898") //Just Enough Items
 //    compile fg.deobf("curse.maven:BS-228525:3411543") //Bookshelf
