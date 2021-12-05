@@ -112,8 +112,9 @@ if (ENV.CURSE_DEPLOY) {
             releaseType = "beta"
             addGameVersion "Forge"
             addGameVersion "${minecraft_version}"
-            mainArtifact(jar)
-            displayName = "BedrockPlus Version ${version}"
+            mainArtifact(jar) {
+                displayName = "BedrockPlus Version ${version}"
+            }
             changelog = "changeme"
 
         }
