@@ -30,6 +30,9 @@ public class BRPBlocks {
 
     public static final RegistryObject<Block> BR_SB_STAIRS = BLOCKS.register(name("stonebrick_stairs"), () -> new StairBlock(BR_STONEBRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(BR_STONEBRICKS.get())));
 
+    public static final RegistryObject<Block> BR_SLAB = BLOCKS.register(name("slab"), () -> new SlabBlock(getProperties(Material.STONE, SoundType.STONE).noOcclusion()));
+    public static final RegistryObject<Block> BR_SB_SLAB = BLOCKS.register(name("stonebrick_slab"), () -> new SlabBlock(getProperties(Material.STONE, SoundType.STONE).noOcclusion()));
+
 
     //Lazy way to get the name of the block with bedrock prefix
     private static String name(String name) {

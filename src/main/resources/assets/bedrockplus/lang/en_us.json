@@ -9,5 +9,7 @@
   "block.bedrockplus.bedrock_stonebricks": "BedRock Stone Bricks",
   "block.bedrockplus.bedrock_ladder": "BedRock Ladder",
   "block.bedrockplus.bedrock_stairs": "BedRock Stairs",
-  "block.bedrockplus.bedrock_stonebrick_stairs": "BedRock Stone Brick Stairs"
+  "block.bedrockplus.bedrock_stonebrick_stairs": "BedRock Stone Brick Stairs",
+  "block.bedrockplus.bedrock_slab": "BedRock Slab",
+  "block.bedrockplus.bedrock_stonebrick_slab": "BedRock Stone Brick Slab"
 }

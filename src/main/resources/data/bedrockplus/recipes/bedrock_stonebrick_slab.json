@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb"
+  ],
+  "key": {
+    "b": { "item": "bedrockplus:bedrock_stonebricks" }
+  },
+  "result": {
+    "item": "bedrockplus:bedrock_stonebrick_slab",
+    "count": 6
+  }
+}

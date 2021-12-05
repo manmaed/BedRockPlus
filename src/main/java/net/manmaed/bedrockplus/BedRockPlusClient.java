@@ -19,5 +19,6 @@ public class BedRockPlusClient
         ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_GLOWSTONE.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_LADDER.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_SB_STAIRS.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(BRPBlocks.BR_SB_SLAB.get(), renderType -> renderType == RenderType.solid() || renderType == RenderType.translucent());
     }
 }

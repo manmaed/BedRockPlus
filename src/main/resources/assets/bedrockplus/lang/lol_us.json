@@ -9,5 +9,7 @@
   "block.bedrockplus.bedrock_stonebricks": "Trol Blukz Stackd Rockz",
   "block.bedrockplus.bedrock_ladder": "Trol Blukz Ladr",
   "block.bedrockplus.bedrock_stairs": "Trol Blukz Stairz",
-  "block.bedrockplus.bedrock_stonebrick_stairs": "Trol Blukz Stackd Rockz Stairz"
+  "block.bedrockplus.bedrock_stonebrick_stairs": "Trol Blukz Stackd Rockz Stairz",
+  "block.bedrockplus.bedrock_slab": "Trol Blukz Sleb",
+  "block.bedrockplus.bedrock_stonebrick_slab": "Trol Blukz Stackd Rockz Sleb"
 }

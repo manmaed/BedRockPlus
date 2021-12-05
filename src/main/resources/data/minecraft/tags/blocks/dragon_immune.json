@@ -7,6 +7,8 @@
     "bedrockplus:bedrock_stonebricks",
     "bedrockplus:bedrock_ladder",
     "bedrockplus:bedrock_stairs",
-    "bedrockplus:bedrock_stonebrick_stairs"
+    "bedrockplus:bedrock_stonebrick_stairs",
+    "bedrockplus:bedrock_slab",
+    "bedrockplus:bedrock_stonebrick_slab"
   ]
 }

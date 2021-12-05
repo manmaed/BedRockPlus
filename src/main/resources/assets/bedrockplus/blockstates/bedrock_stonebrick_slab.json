@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bedrockplus:block/bedrock_stonebrick_slab"
+    },
+    "type=double": {
+      "model": "bedrockplus:block/bedrock_stonebricks"
+    },
+    "type=top": {
+      "model": "bedrockplus:block/bedrock_stonebrick_slab_top"
+    }
+  }
+}
