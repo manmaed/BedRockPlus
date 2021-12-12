@@ -1,4 +1,4 @@
-name: Build & Release
+name: Build & Release for Minecraft 1.18.1
 
 on:
   create:
