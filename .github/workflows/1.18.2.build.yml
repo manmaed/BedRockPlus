@@ -3,7 +3,7 @@ name: Build & Release for Minecraft 1.18.2
 on:
   create:
     tags:
-      - v*
+      - 'v*'
 
 jobs:
   build:
