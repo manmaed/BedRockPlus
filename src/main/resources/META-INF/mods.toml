@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[40,)"
 license="All rights reserved"
 issueTrackerURL = "https://github.com/manmaed/BedRockPlus/issues" #optional
 [[mods]]
@@ -10,5 +10,4 @@ updateJSONURL = "https://raw.githubusercontent.com/manmaed/BedRockPlus/main/upda
 authors = "manmaed" #optional
 logoFile = "bedrockplus_logo.png"
 description='''
-Adds More Bedrock Stuff!
-'''
+Adds More Bedrock Stuff!'''
