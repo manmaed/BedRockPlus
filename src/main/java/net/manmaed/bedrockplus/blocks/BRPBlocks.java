@@ -13,7 +13,7 @@ import net.minecraftforge.registries.*;
 public class BRPBlocks {
 
     private static BlockBehaviour.Properties getProperties(Material material, SoundType soundType) {
-        return BlockBehaviour.Properties.of(material).sound(soundType).strength(-1.0F, 3600000.0F).noDrops().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never);
+        return BlockBehaviour.Properties.of(material).sound(soundType).strength(-1.0F, 3600000.0F).noLootTable().isValidSpawn(BRPBlocks::never).isRedstoneConductor(BRPBlocks::never).isSuffocating(BRPBlocks::never).isViewBlocking(BRPBlocks::never);
     }
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BedRockPlus.MOD_ID);
