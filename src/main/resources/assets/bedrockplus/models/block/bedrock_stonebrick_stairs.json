@@ -1,27 +1,27 @@
 {
   "parent": "block/block",
-  "loader": "forge:multi-layer",
-  "layers": {
-    "solid": {
+  "loader": "forge:composite",
+  "children": {
+    "first": {
       "parent": "block/stairs",
       "textures": {
         "bottom": "block/bedrock",
         "top": "block/bedrock",
         "side": "block/bedrock"
       },
-      "tasmsform": {
-        "origin": "center",
-        "scale": 1
-      }
+      "render_type": "solid"
     },
-    "translucent": {
+    "second": {
       "parent": "block/stairs",
       "textures": {
         "bottom": "bedrockplus:block/stonebricks",
         "top": "bedrockplus:block/stonebricks",
         "side": "bedrockplus:block/stonebricks"
-      }
+      },
+      "render_type": "translucent"
     }
   },
-  "textures": { "particle": "block/bedrock" }
+  "textures": {
+    "particle": "block/bedrock"
+  }
 }

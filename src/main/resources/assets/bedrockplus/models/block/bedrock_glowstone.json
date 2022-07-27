@@ -1,23 +1,23 @@
 {
   "parent": "block/block",
-  "loader": "forge:multi-layer",
-  "layers": {
-    "solid": {
+  "loader": "forge:composite",
+  "children": {
+    "first": {
       "parent": "block/cube_all",
       "textures": {
         "all": "block/bedrock"
       },
-      "tasmsform": {
-        "origin": "center",
-        "scale": 1
-      }
+      "render_type": "solid"
     },
-    "translucent": {
+    "second": {
       "parent": "block/cube_all",
       "textures": {
         "all": "bedrockplus:block/glowstone"
-      }
+      },
+      "render_type": "translucent"
     }
   },
-  "textures": { "particle": "block/bedrock" }
+  "textures": {
+    "particle": "block/bedrock"
+  }
 }

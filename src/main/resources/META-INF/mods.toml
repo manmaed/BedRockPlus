@@ -9,5 +9,10 @@ displayName="BedRock+"
 updateJSONURL = "https://raw.githubusercontent.com/manmaed/BedRockPlus/main/update.json"
 authors = "manmaed" #optional
 logoFile = "bedrockplus_logo.png"
-description='''
-Adds More Bedrock Stuff!'''
+description='''Adds More Bedrock Stuff!'''
+[[dependencies.bedrockplus]]
+modId="forge"
+mandatory=true
+versionRange="[41.1.0,)"
+ordering="NONE"
+side="BOTH"

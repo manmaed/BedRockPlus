@@ -1,3 +1,17 @@
 {
-  "parent": "bedrockplus:block/bedrock_stonebrick_stairs"
+  "parent": "bedrockplus:block/bedrock_stonebrick_stairs",
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        135,
+        0
+      ],
+      "scale": [
+        0.62,
+        0.62,
+        0.62
+      ]
+    }
+  }
 }

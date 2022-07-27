@@ -24,7 +24,5 @@ public class BedRockPlus {
 		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		BRPBlocks.BLOCKS.register(eventBus);
 		BRPItems.ITEMS.register(eventBus);
-		eventBus.addListener(BedRockPlusClient::doClientStuff);
-
 	}
 }
