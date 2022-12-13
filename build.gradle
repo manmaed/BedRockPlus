@@ -121,8 +121,6 @@ if (ENV.CURSE_DEPLOY) {
             addGameVersion "${minecraft_version}"
             mainArtifact(jar) {
                 displayName = "${mod_name} Version ${version} - ${minecraft_version}"
-                relations {
-                }
             }
             changelog = "changeme"
 
