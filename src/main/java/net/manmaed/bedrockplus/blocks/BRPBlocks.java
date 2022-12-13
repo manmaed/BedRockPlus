@@ -19,8 +19,8 @@ public class BRPBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BedRockPlus.MOD_ID);
 
     public static final RegistryObject<Block> BR_STONEBRICKS = BLOCKS.register(name("stonebricks"), () -> new Block(getProperties(Material.STONE, SoundType.STONE)));
-    public static final RegistryObject<Block> BR_GLASS = BLOCKS.register(name("clear_glass"), () -> new Block(getProperties(Material.GLASS, SoundType.GLASS).noOcclusion()));
-    public static final RegistryObject<Block> BR_CLEARGLASS = BLOCKS.register(name("glass"), () -> new Block(getProperties(Material.GLASS, SoundType.GLASS).noOcclusion()));
+    public static final RegistryObject<Block> BR_GLASS = BLOCKS.register(name("clear_glass"), () -> new GlassBlock(getProperties(Material.GLASS, SoundType.GLASS).noOcclusion()));
+    public static final RegistryObject<Block> BR_CLEARGLASS = BLOCKS.register(name("glass"), () -> new GlassBlock(getProperties(Material.GLASS, SoundType.GLASS).noOcclusion()));
 
     public static final RegistryObject<Block> BR_GLOWSTONE = BLOCKS.register(name("glowstone"), () -> new Block(getProperties(Material.GLASS, SoundType.GLASS).lightLevel((light)->{
         return 15;

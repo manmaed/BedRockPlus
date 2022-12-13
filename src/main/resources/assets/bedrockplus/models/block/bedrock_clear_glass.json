@@ -2,5 +2,6 @@
   "parent": "block/cube_all",
   "textures": {
     "all": "bedrockplus:block/clear_glass"
-  }
+  },
+  "render_type": "translucent"
 }
